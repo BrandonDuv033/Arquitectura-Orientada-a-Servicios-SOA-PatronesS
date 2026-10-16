@@ -13,7 +13,7 @@ const PanelControlMediator = () => {
 
   return (
     <div className="mediador-container">
-      <h2>Panel de Gestión</h2>
+      <h2>Demo Mediator</h2>
 
       <SelectorProducto
         value={producto}

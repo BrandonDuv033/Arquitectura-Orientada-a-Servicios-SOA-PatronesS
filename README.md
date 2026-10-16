@@ -18,5 +18,5 @@ El contenido de este repositorio está organizado para abordar los siguientes ej
 7. **Conclusión:** Criterios de decisión sobre en qué situaciones específicas conviene utilizar cada enfoque.
 
 ## 🛠️ Tecnologías Utilizadas
-* En proceso...
+* React, HTML, CSS y JS
 * Control de versiones con Git & GitHub (Estándar de commits semánticos)

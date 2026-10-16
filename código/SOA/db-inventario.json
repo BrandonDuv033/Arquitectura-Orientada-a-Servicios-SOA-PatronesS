@@ -3,12 +3,12 @@
     {
       "id": 1,
       "nombre": "Cuaderno Argollado",
-      "stock": 9
+      "stock": 10
     },
     {
       "id": 2,
       "nombre": "Resma de Papel",
-      "stock": 2
+      "stock": 3
     }
   ]
 }

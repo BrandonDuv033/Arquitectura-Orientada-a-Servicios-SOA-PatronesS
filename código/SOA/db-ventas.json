@@ -1,14 +1,3 @@
 {
-  "ventas": [
-    {
-      "producto": "Cuaderno Argollado",
-      "cantidad": 1,
-      "id": 1
-    },
-    {
-      "producto": "Resma de Papel",
-      "cantidad": 1,
-      "id": 2
-    }
-  ]
+  "ventas": []
 }

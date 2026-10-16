@@ -9,7 +9,7 @@ class MrBeastNotificaciones {
   }
 
   desuscribir(observador) {
-    this.suscriptores = this.suscriptores.filter(obs => obs !== observador);
+    this.suscriptores = this.suscriptores.filter((obs) => obs !== observador);
   }
 
   publicarContenido(titulo) {
@@ -18,7 +18,7 @@ class MrBeastNotificaciones {
   }
 
   notificar(titulo) {
-    this.suscriptores.forEach(suscriptor => {
+    this.suscriptores.forEach((suscriptor) => {
       suscriptor.actualizar(this.nombre, titulo);
     });
   }
@@ -32,19 +32,21 @@ class Usuario {
 
   // El método que el Sujeto ejecutará
   actualizar(canal, contenido) {
-    console.log(`Hola ${this.nombre}, ¡${canal} tiene una actualización para ti: ${contenido}!`);
+    console.log(
+      `Hola ${this.nombre}, ¡${canal} tiene una actualización para ti: ${contenido}!`,
+    );
   }
 }
 
 // --- Uso del Patrón ---
 
 // 1. Creamos el sujeto
-const sistemaAlertas = new CanalNotificaciones('Sistema Principal');
+const sistemaAlertas = new CanalNotificaciones("Sistema Principal");
 
 // 2. Creamos los observadores
-const brandon = new Usuario('Brandon');
-const mari = new Usuario('Mari');
-const kevin = new Usuario('Kevin');
+const brandon = new Usuario("Brandon");
+const mari = new Usuario("Mari");
+const kevin = new Usuario("Kevin");
 
 // 3. Los observadores se suscriben al sujeto
 sistemaAlertas.suscribir(brandon);
@@ -53,5 +55,4 @@ sistemaAlertas.suscribir(kevin);
 sistemaAlertas.desuscribir(mari);
 
 // 4. El sujeto cambia de estado y notifica a todos mágicamente
-sistemaAlertas.publicarContenido('Actualización de base de datos completada');
-sistemaAlertas.notificar('Nuevo Anuncio');
+sistemaAlertas.publicarContenido("Actualización de base de datos completada");

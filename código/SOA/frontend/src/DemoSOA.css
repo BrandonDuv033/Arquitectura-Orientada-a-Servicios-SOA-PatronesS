@@ -1,0 +1,126 @@
+/* Tema oscuro: mismo estilo del panel del Mediator */
+:root {
+  --fondo: #0f1620;
+  --superficie: #18212e;
+  --campo: #101822;
+  --tinta: #e6edf5;
+  --tinta-suave: #9aa9ba;
+  --borde: #2d3b4d;
+  --acento: #5aa9e6;
+  --acento-hover: #7bbcef;
+  --texto-boton: #0b1420;
+  --exito: #6ee7a8;
+  --exito-fondo: #12281f;
+  --error: #ff8a8a;
+  --error-fondo: #2e1719;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+.soa-container {
+  box-sizing: border-box;
+  width: min(420px, calc(100% - 32px));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+}
+
+.soa-container h2 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--tinta-suave);
+}
+
+.input-group select,
+.input-group input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--tinta);
+  background: var(--campo);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  color-scheme: dark;
+}
+
+.input-group select:focus-visible,
+.input-group input:focus-visible,
+.btn-primario:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.btn-primario {
+  margin-top: 4px;
+  padding: 12px 16px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--texto-boton);
+  background: var(--acento);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primario:hover {
+  background: var(--acento-hover);
+}
+
+.mensaje {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.mensaje-exito {
+  color: var(--exito);
+  background: var(--exito-fondo);
+  border-color: var(--exito);
+}
+
+.mensaje-error {
+  color: var(--error);
+  background: var(--error-fondo);
+  border-color: var(--error);
+}
+
+@media (max-width: 480px) {
+  .soa-container {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Cuaderno Argollado",
+      "stock": 9
+    },
+    {
+      "id": 2,
+      "nombre": "Resma de Papel",
+      "stock": 2
+    }
+  ]
+}

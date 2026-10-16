@@ -1,0 +1,11 @@
+{
+  "name": "Demo-SOA",
+  "version": "1.0.0",
+  "scripts": {
+    "inventario": "json-server --watch db-inventario.json --port 3001",
+    "ventas": "node ventas.js"
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
